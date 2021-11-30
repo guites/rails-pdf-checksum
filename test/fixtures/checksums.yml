@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  md5: MyString
+  sha1: MyString
+  sha256: MyString
+  sha512: MyString
+  article_id: 
+
+two:
+  md5: MyString
+  sha1: MyString
+  sha256: MyString
+  sha512: MyString
+  article_id: 

@@ -1,0 +1,17 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.body %></p>
+<hr/>
+<h2>Checksums</h2>
+<ul>
+    <li><bold>MD5: </bold><%= @article.checksum.md5 %></li>
+    <li><bold>SHA1: </bold><%= @article.checksum.sha1 %></li>
+    <li><bold>SHA256: </bold><%= @article.checksum.sha256 %></li>
+    <li><bold>SHA512: </bold><%= @article.checksum.sha512 %></li>
+</ul>
+<hr/>
+<ul>
+    <li><%= link_to "Download PDF", download_pdf_path(:format => 'pdf') %></li>
+    <li><%= link_to "Edit", edit_article_path(@article) %></li>
+    <li><%= link_to "Destroy", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %></li>
+    <li><%= link_to "See all articles", articles_path %></li>
+</ul>
